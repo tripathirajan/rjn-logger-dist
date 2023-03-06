@@ -17,10 +17,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getLogger = void 0;
+exports.Logger = exports.getLogger = void 0;
 __exportStar(require("./enums"), exports);
 __exportStar(require("./types"), exports);
 __exportStar(require("./Targets"), exports);
 __exportStar(require("./Utility"), exports);
 var Logger_1 = require("./Logger");
 Object.defineProperty(exports, "getLogger", { enumerable: true, get: function () { return __importDefault(Logger_1).default; } });
+var Logger_2 = require("./Logger");
+Object.defineProperty(exports, "Logger", { enumerable: true, get: function () { return Logger_2.Logger; } });
